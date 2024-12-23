@@ -1,12 +1,5 @@
-import ThemeToggle from '@/components/ui/theme-toggle';
-import Container from '@/components/ui/container';
+import { Home } from '@/components/home';
 
-export default function Home() {
-  return (
-    <Container>
-      <div className="min-h-screen flex items-center justify-center">
-        <ThemeToggle />
-      </div>
-    </Container>
-  );
+export default function Page() {
+  return <Home />;
 }
