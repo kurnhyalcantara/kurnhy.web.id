@@ -5,6 +5,7 @@ import { headerNavigation } from '@/data/navigation';
 import { Link } from '../ui/link';
 import ThemeToggle from '../ui/theme-toggle';
 import BottomNavigation from '../ui/bottom-nav';
+import { Logo } from './logo';
 
 export default function Header() {
   return (
@@ -18,7 +19,7 @@ export default function Header() {
         )}
       >
         <div className="flex items-center justify-between gap-3">
-          <div>Logo</div>
+          <Logo />
           <div className="flex items-center gap-4">
             <div className="hidden gap-1.5 sm:flex">
               {headerNavigation.map(({ href, title }) => {
