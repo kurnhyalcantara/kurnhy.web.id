@@ -1,4 +1,5 @@
 import Container from '../ui/container';
+import { Twemoji } from '../ui/twemoji';
 import { Greetings } from './greetings';
 
 export function Home() {
@@ -15,6 +16,10 @@ export function Home() {
             <p>I enjoy working with Golang, JavaScript, TypeScript</p>
             <p>This blog is where I share what I’ve learned along the way.</p>
           </div>
+          <p className="my-6 flex md:my-8">
+            <span className="mr-2">Happy reading</span>
+            <Twemoji emoji="clinking-beer-mugs" />
+          </p>
         </div>
       </div>
     </Container>
