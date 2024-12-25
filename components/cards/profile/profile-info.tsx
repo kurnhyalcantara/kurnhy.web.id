@@ -11,8 +11,8 @@ export function ProfileInfo() {
         Kurniawan
       </h3>
       <h5 className="py-2 text-gray-500 dark:text-gray-400">
-        <span>kurnhyalcantara | Code Wizard </span>
-        <Twemoji emoji="man-technologist" />
+        <span>Jakarta, Indonesia </span>
+        <Twemoji emoji="flag-indonesia" />
       </h5>
       <div className="mb-2 mt-4 space-y-4">
         {siteMetadata.profileInfo.map((item) => {
