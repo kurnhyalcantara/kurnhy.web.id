@@ -13,13 +13,14 @@
     "@heroicons/react": "^2.2.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "lucide-react": "^0.469.0",
+    "feather-icons": "^4.29.2",
     "next": "15.1.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
+    "@types/feather-icons": "^4.29.4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

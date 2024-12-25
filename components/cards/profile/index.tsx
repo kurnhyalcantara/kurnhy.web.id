@@ -1,12 +1,12 @@
 import clsx from 'clsx';
 import { Image } from '@/components/ui/image';
-import { siteMetadata } from '@/data/site_metadata';
+import { siteMetadata } from '@/data/site-metadata';
 import { ProfileInfo } from './profile-info';
 
 export function ProfileCard() {
   return (
     <div
-      className="z-10 mb-8 scale-100 transition-all duration-200 ease-out hover:z-50 md:mb-0 md:hover:scale-[1.15]"
+      className="z-10 mb-8 xl:scale-100 transition-all duration-200 ease-out hover:z-50 md:mb-0 md:hover:scale-[1.15]"
       style={{ perspective: '600px' }}
     >
       <div
@@ -28,6 +28,7 @@ export function ProfileCard() {
           loading="eager"
         ></Image>
         <ProfileInfo />
+        <span className="dark:hidden h-1.5 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600" />
       </div>
     </div>
   );

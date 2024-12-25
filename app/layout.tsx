@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { Rubik } from 'next/font/google';
 import '@/css/globals.css';
 import '@/css/twemoji.css';
-import { siteMetadata } from '@/data/site_metadata';
+import { siteMetadata } from '@/data/site-metadata';
 import clsx from 'clsx';
 import { ThemeProviders } from './providers';
 import Header from '@/components/header';

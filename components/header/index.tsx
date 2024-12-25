@@ -1,6 +1,6 @@
 import clsx from 'clsx';
 import Container from '../ui/container';
-import { siteMetadata } from '@/data/site_metadata';
+import { siteMetadata } from '@/data/site-metadata';
 import { headerNavigation } from '@/data/navigation';
 import { Link } from '../ui/link';
 import ThemeToggle from '../ui/theme-toggle';
@@ -29,8 +29,10 @@ export default function Header() {
                     href={href}
                     className="font-medium px-3 py-1 relative inline-block group"
                   >
-                    <span className="absolute inset-0 bg-gradient-to-r from-gray-300 to-gray-500 dark:from-blue-500 dark:to-purple-500 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300"></span>
-                    <span className="relative">{title}</span>
+                    <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg opacity-0 group-hover:opacity-100 transition duration-300"></span>
+                    <span className="relative text-gray-700 group-hover:text-white dark:text-gray-200 dark:group-hover:text-white">
+                      {title}
+                    </span>
                   </Link>
                 );
               })}

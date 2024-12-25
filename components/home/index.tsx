@@ -24,7 +24,7 @@ export function Home() {
             </p>
           </div>
         </div>
-        <div className="hidden pl-4 pt-8 xl:block">
+        <div className="p-4 md:pl-4 md:pt-8 ">
           <ProfileCard />
         </div>
       </div>

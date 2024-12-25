@@ -13,7 +13,7 @@ export const headerNavigation = [
 
 export const bottomNavigation = [
   { href: '/', title: 'Home', icon: HomeIcon },
-  { href: '/blogs', title: 'Blog', icon: PencilIcon },
-  { href: '/projects', title: 'Project', icon: FireIcon },
-  { href: '/about', title: 'About', icon: IdentificationIcon },
+  { href: '/blogs', title: 'Blog', icon: PencilIcon }, // hash
+  { href: '/projects', title: 'Project', icon: FireIcon }, // command
+  { href: '/about', title: 'About', icon: IdentificationIcon }, //user
 ];

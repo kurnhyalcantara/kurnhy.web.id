@@ -1,4 +1,4 @@
-import { siteMetadata } from '@/data/site_metadata';
+import { siteMetadata } from '@/data/site-metadata';
 import { ThemeProvider } from 'next-themes';
 
 export function ThemeProviders({ children }: { children: React.ReactNode }) {

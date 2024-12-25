@@ -1,4 +1,4 @@
-import { siteMetadata } from '@/data/site_metadata';
+import { siteMetadata } from '@/data/site-metadata';
 import { Link } from '../ui/link';
 import { Image } from '../ui/image';
 import clsx from 'clsx';
