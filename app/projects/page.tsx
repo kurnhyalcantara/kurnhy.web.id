@@ -1,3 +1,5 @@
+import { Project } from '@/components/project';
+
 export default function Page() {
-  return <div>Project</div>;
+  return <Project />;
 }
