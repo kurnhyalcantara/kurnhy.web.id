@@ -2,9 +2,7 @@ import { siteMetadata } from '@/data/site-metadata';
 import { Link } from '../ui/link';
 import { FeatherIcon } from '../ui/feather-icon';
 import clsx from 'clsx';
-import { Twemoji } from '../ui/twemoji';
 
-const TIME_IS = 'https://time.is/Jakarta';
 const MY_TIMEZONE = 'Asia/Jakarta';
 const MY_TIMEZONE_OFFSET = 7 * -60; // UTC+7
 
