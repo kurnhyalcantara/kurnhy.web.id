@@ -6,6 +6,7 @@ import { siteMetadata } from '@/data/site-metadata';
 import clsx from 'clsx';
 import { ThemeProviders } from './providers';
 import Header from '@/components/header';
+import { Footer } from '@/components/footer';
 
 const FONT_RUBIK = Rubik({
   variable: '--font-rubik',
@@ -42,6 +43,7 @@ export default function RootLayout({
         <ThemeProviders>
           <Header></Header>
           {children}
+          <Footer></Footer>
         </ThemeProviders>
       </body>
     </html>

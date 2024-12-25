@@ -31,4 +31,5 @@ export const siteMetadata = {
       link: 'https://instagram.com/kurnhyalcantara',
     },
   ],
+  siteRepo: 'https://github.com/kurnhyalcantara/kurnhy.web.id',
 };
