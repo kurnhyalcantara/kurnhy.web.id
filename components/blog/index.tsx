@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Container from '../ui/container';
 import { PageHeader } from '../ui/page-header';
 import { SearchBar } from '../ui/search-bar';
+import { BlogPostCard } from '../cards/blog';
 
 export function Blog() {
   const [searchValue, setSearchValue] = useState('');
@@ -20,6 +21,18 @@ export function Blog() {
           onChange={(e) => setSearchValue(e.target.value)}
         />
       </PageHeader>
+      <div className="grid grid-cols-1 gap-x-8 gap-y-16 py-10 md:gap-y-16 lg:grid-cols-2 xl:grid-cols-3">
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+        <BlogPostCard post="Test" />
+      </div>
     </Container>
   );
 }
