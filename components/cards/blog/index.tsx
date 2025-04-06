@@ -1,5 +1,6 @@
 import { Link } from '@/components/ui/link';
 import { Image } from '@/components/ui/image';
+import { BlogMeta } from '@/components/blog/blog-meta';
 import clsx from 'clsx';
 
 export type BlogCardMetadata = {
@@ -15,11 +16,11 @@ export const BlogPostCard = (post: BlogCardMetadata) => {
     <article className="group relative rounded-lg bg-white p-4 shadow-md transition-shadow hover:shadow-xl hover:shadow-gray-300 dark:bg-gray-900 dark:shadow-lg dark:shadow-gray-900 dark:hover:shadow-gray-800">
       <div className="flex flex-col items-start gap-4">
         <Link
-          href={`/${post.slug}`}
+          href={`/blogs/${post.slug}`}
           className={clsx([
             'relative block overflow-hidden rounded-lg',
             'h-auto w-full aspect-video',
-            'transition-transform duration-300 ease-in-ou',
+            'transition-transform duration-300 ease-in-out',
           ])}
         >
           <Image
@@ -34,13 +35,14 @@ export const BlogPostCard = (post: BlogCardMetadata) => {
       </div>
       <div className="w-full space-y-3 mt-4">
         <div className="flex items-center gap-x-2 text-sm text-gray-500 dark:text-gray-400">
-          <time>{post.publishedAt} / </time>
-          <span className="text-gray-400">&bull;</span>
-          <span>8 min read</span>
+          <BlogMeta date={post.publishedAt} />
         </div>
         <div className="relative">
           <h3 className="text-lg font-semibold leading-6 text-gray-800 dark:text-gray-100">
-            <Link href={`/${post.slug}`} className="hover:text-primary-500">
+            <Link
+              href={`/blogs/${post.slug}`}
+              className="hover:text-primary-500"
+            >
               {post.title}
             </Link>
           </h3>

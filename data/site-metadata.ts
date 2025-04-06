@@ -32,4 +32,5 @@ export const siteMetadata = {
     },
   ],
   siteRepo: 'https://github.com/kurnhyalcantara/kurnhy.web.id',
+  socialBanner: '',
 };
